@@ -72,7 +72,7 @@ class NatureRemoLightDevice {
           res => res.id === this.config.id
         )[0];
         this.state = device.light.state.last_button;
-        if (this.state == "nigth") {
+        if (this.state == "night") {
           this.brightness = 10;
         } else if (this.state == "on-100") {
           this.brightness = 100;
